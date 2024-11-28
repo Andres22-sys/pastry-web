@@ -1,0 +1,42 @@
+/* Team Section Styles */
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    justify-items: center;
+    text-align: center;
+}
+
+.team-member img {
+    width: 200px;
+    border-radius: 5px 5px 0 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+    margin-bottom: -4px;
+}
+
+.team-member-text {
+    background-color: rgb(188, 137, 213);
+    padding: 10px;
+    margin-top: 0;
+    border-radius: 5px;
+}
+
+/* Mobile Responsiveness */
+@media screen and (max-width: 767px) {
+    .team-grid {
+        grid-template-columns: 1fr; /* Single-column layout */
+    }
+
+    .team-member img {
+        width: 80%; /* Scale down images */
+        margin: -4px auto;
+    }
+
+    .team-member {
+        text-align: center;
+    }
+
+    .team-member-text {
+        background-color: transparent;
+    }
+}

@@ -1,0 +1,30 @@
+/* Menu Section Styles */
+.menu-section {
+    padding: 40px 0;
+}
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    justify-items: center;
+    text-align: center;
+}
+
+.menu-item img {
+    width: 200px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+}
+
+/* Mobile Responsiveness */
+@media screen and (max-width: 767px) {
+    .menu-grid {
+        grid-template-columns: 1fr; /* Single-column layout */
+    }
+
+    .menu-item img {
+        width: 100%; /* Full width for smaller screens */
+        max-width: 300px;
+        margin: 0 auto;
+    }
+}
